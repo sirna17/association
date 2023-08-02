@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+nav{
+    background-color: #dbdbdb;
+    padding: 30px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section h1{
+    display:none;
+}
+.img{
+    width: 100px;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 22px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #039;
+    text-transform: uppercase;
+    transition: 0.5s;
+    padding: 50px;
+}
+
+.menu li a:hover{
+    color: #09f;
+    transition: 0.5s
+}
+
+.menu li .on{
+    color: #f60;
+}
+
+#check, .voir-menu, .cacher-menu{
+    display: none;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+section img{
+    width: 100%;
+}
+#diaporama{
+    width: 90%;
+    max-width: 640px; 
+    margin: auto; 
+   
+}
+#diaporama img{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: 640px; 
+    border-radius: 50px;
+    border: solid 3px #ddd;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+.image1{
+    animation-name: image1;
+}
+.image2{
+    animation-name: image2;
+}
+.image3{
+    animation-name: image3;
+}
+.image4{
+    animation-name: image4;
+}
+.image5{
+    animation-name: image5;
+}
+.image6{
+    animation-name: image6;
+}
+
+
+@keyframes image1{
+   0%       {opacity: 1;}
+   16%     {opacity: 0;} 
+   32%     {opacity: 0;} 
+   48%     {opacity: 0;} 
+   64%     {opacity: 0;} 
+   80%     {opacity: 0;} 
+   100%   {opacity: 1;} 
+}
+
+@keyframes image2{
+    0%       {opacity: 0;}
+    16%     {opacity: 1;} 
+    32%     {opacity: 0;} 
+    48%     {opacity: 0;} 
+    64%     {opacity: 0;} 
+    80%     {opacity: 0;} 
+    100%   {opacity: 0;} 
+}
+
+@keyframes image3{
+    0%       {opacity: 0;}
+    16%     {opacity: 0;} 
+    32%     {opacity: 3;} 
+    48%     {opacity: 0;} 
+    64%     {opacity: 0;} 
+    80%     {opacity: 0;} 
+    100%   {opacity: 0;} 
+}
+
+@keyframes image4{
+    0%       {opacity: 0;}
+    16%     {opacity: 0;} 
+    32%     {opacity: 0;} 
+    48%     {opacity: 1;} 
+    64%     {opacity: 0;} 
+    80%     {opacity: 0;} 
+    100%   {opacity: 0;} 
+}
+
+@keyframes image5{
+    0%       {opacity: 0;}
+    16%     {opacity: 0;} 
+    32%     {opacity: 0;} 
+    48%     {opacity: 0;} 
+    64%     {opacity: 1;} 
+    80%     {opacity: 0;} 
+    100%   {opacity: 0;} 
+}
+
+@keyframes image6{
+    0%       {opacity: 0;}
+    16%     {opacity: 0;} 
+    32%     {opacity: 0;} 
+    48%     {opacity: 0;} 
+    64%     {opacity: 0;} 
+    80%     {opacity: 1;} 
+    100%   {opacity: 0;} 
+}
+
+
+.resumer, article{
+    width: 85%;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 35px;
+    height: 250px;
+    padding: 20px;
+    border: solid 1px #ccc;
+    border-radius: 25px;
+    box-shadow: 3px 3px 9px #ddd;
+}
+
+article{
+    height: auto;
+}
+
+article img{
+    float: right;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+article h2{
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.resumer h2{
+    text-align: center;
+    color: #933;
+}
+
+.resumer p, article p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.resumer p:last-child{
+    display: inline;
+    background-color: #f90;
+    padding: 5px 25px;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: #933;
+    letter-spacing: 5px;
+}
+
+a{
+    color:#000;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+a:hover{
+    color:#fff;
+    transition: 0.7s;
+}
+
+.ronde{
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.rond-apropos{
+    background-image: url(../Image/kere2.jpeg);
+}
+
+.rond-projet{
+    background-image: url(../Image/mesure1.jpg);  
+}
+
+footer{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+footer nav{
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 300px;
+    height: 110px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover i{
+    transform: scale(4);
+    opacity:0;
+}
+.box a{
+    color: #f39c12;
+    text-decoration: none;
+}
+.box i{
+    font-size: 32px;
+    transition: 0.3s;
+}
+.box h4, .box span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.box h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    top: 5px;
+}
+.box:hover h4{
+    opacity: 1;
+    top: 20px;
+    transition: 0.3s;
+}
+.box span{
+    color: white;
+    font-size: 10px;
+    bottom: 15px;
+}
+.box:hover span{
+    opacity: 1;
+    bottom: 25px;
+    transition: 0.3s;
+}
+#box_contact{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    width: 50%;
+    min-width:320px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+.champ{
+    display: flex;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    border-bottom: solid 1px #933;
+    transition:0.5s;
+}
+.champ i{
+    font-size: 25px;
+    color: #933;
+    margin-right: 15px;
+    display: inline-block;
+    width: 25px;
+}
+.champ input{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    color:#933;
+}
+::placeholder{
+    color: #933;
+
+}
+input[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    border:solid 1px #933;
+    background: none;
+    color: #933;
+    padding: 7px;
+    font-size: 19px;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover{
+    background-color:#933;
+    color:white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 950px){
+    .voir-menu, .cacher-menu{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .cacher-menu{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
+
+    .voir-menu:hover, .cacher-menu:hover{
+        color: #666;
+        transition: 0.5s;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #dbdbdb;
+        transition: 0.7s;
+        padding-top: 80px;
+    }
+
+    .menu li{
+        display: block;
+        text-align: center;
+        margin-bottom: 35px;
+        border-bottom: solid 1px #ccc;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .ronde{
+        width: 65%;
+        border-radius: 50px;
+        float: none;
+        margin-right: 0;
+    }
+
+    .resumer, article{
+        height: auto;
+        text-align: center;
+    }
+
+    article img{
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 450px;
+    }
+    .box:hover i{
+        transform: scale(2);
+        opacity: 0.3;
+        transition: 0.3s;
+        background-color: rgba(0,0,0,0.3);
+        border: solid 1px red;
+        width: 100%;
+  }
+  .box span{
+        display: none;
+  }
+  footer nav{
+    width: 100%;
+  }
+}
